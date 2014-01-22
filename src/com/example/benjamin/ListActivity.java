@@ -24,11 +24,11 @@ public class ListActivity extends Activity{
 		
 		listView = (ListView)findViewById(R.id.listView);
 		
-		ArrayList<String> dataList = new ArrayList<String>();
+		ArrayList<People> dataList = new ArrayList<People>();
 		for(int i=0;i<50;i++)
-			dataList.add("Data"+i);
+			dataList.add(new People ("Tel"+i, "Person"+i));
 		
-		ArrayAdapter<String> Adaptader = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dataList);
-		listView.setAdapter(Adaptader);
+		MyAdapter Adapter = new MyAdapter(this,R.layout.template_people,dataList);
+		listView.setAdapter(Adapter);	
 	}
 }
