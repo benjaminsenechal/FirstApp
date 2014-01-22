@@ -49,7 +49,7 @@ public class RelativeActivity extends Activity implements View.OnClickListener{
 		else if(caller.getId() == R.id.button3)
 			txt.setText("Trop");
 		else if(caller.getId() == R.id.button4)
-			txt.setText("Belle");
+			txt.setText("Bien");
 	}
 
 }
